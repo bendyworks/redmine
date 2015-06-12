@@ -15,8 +15,8 @@ issuesApp.controller('mainController', function($scope, Restangular) {
     columnDefs: [
       {field: 'subject'},
       {field: 'description'},
-      {field: 'priorityId'},
-      {field: 'authorId'},
+      {field: 'priority'},
+      {field: 'author'},
       {field: 'startDate'},
       {field: 'doneRatio'}
     ],
@@ -43,8 +43,8 @@ issuesApp.controller('mainController', function($scope, Restangular) {
       return {
         'subject': i.subject,
         'description': i.description,
-        'priorityId': i.priority.name,
-        'authorId': i.author.name,
+        'priority': i.priority.name,
+        'author': i.author.name,
         'startDate': i.start_date,
         'doneRatio': i.done_ratio
       };
