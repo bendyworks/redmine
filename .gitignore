@@ -17,10 +17,8 @@
 /lib/redmine/scm/adapters/mercurial/redminehelper.pyo
 /log/*.log*
 /log/mongrel_debug
-/plugins/*
 !/plugins/README
 /public/dispatch.*
-/public/plugin_assets/*
 /public/themes/*
 !/public/themes/alternate
 !/public/themes/classic
@@ -39,3 +37,5 @@
 /Gemfile.lock
 /Gemfile.local
 
+# Ignore emacs autosave files
+*~*
